@@ -18,6 +18,7 @@
 		602638B42119FB0200F7C15E /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 602638B12119FB0200F7C15E /* rain.jpg */; };
 		602638B52119FB0200F7C15E /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 602638B22119FB0200F7C15E /* secret.jpg */; };
 		602638B62119FB0200F7C15E /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 602638B32119FB0200F7C15E /* darknight.jpg */; };
+		60798544212B0DB40079F25D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60798543212B0DB40079F25D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		602638B12119FB0200F7C15E /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rain.jpg; sourceTree = "<group>"; };
 		602638B22119FB0200F7C15E /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
 		602638B32119FB0200F7C15E /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
+		60798543212B0DB40079F25D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				602638AA2119E1F400F7C15E /* ListViewController.swift */,
 				602638AC2119E46000F7C15E /* MovieVO.swift */,
 				602638AE2119F86100F7C15E /* MovieCell.swift */,
+				60798543212B0DB40079F25D /* DetailViewController.swift */,
 				6026389C2119E13100F7C15E /* Main.storyboard */,
 				6026389F2119E13200F7C15E /* Assets.xcassets */,
 				602638A12119E13200F7C15E /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 				6026389B2119E13100F7C15E /* ViewController.swift in Sources */,
 				602638AD2119E46000F7C15E /* MovieVO.swift in Sources */,
 				602638992119E13100F7C15E /* AppDelegate.swift in Sources */,
+				60798544212B0DB40079F25D /* DetailViewController.swift in Sources */,
 				602638AF2119F86100F7C15E /* MovieCell.swift in Sources */,
 				602638AB2119E1F400F7C15E /* ListViewController.swift in Sources */,
 			);
