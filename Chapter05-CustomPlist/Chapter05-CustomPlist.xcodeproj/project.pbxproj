@@ -13,6 +13,7 @@
 		6023FC39216B68C60001828F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6023FC38216B68C60001828F /* Assets.xcassets */; };
 		6023FC3C216B68C60001828F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6023FC3A216B68C60001828F /* LaunchScreen.storyboard */; };
 		6023FC44216B6C9F0001828F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023FC43216B6C9F0001828F /* ListViewController.swift */; };
+		60700704216CC74B0038DBAF /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60700703216CC74B0038DBAF /* UserInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6023FC3B216B68C60001828F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6023FC3D216B68C60001828F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6023FC43216B6C9F0001828F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		60700703216CC74B0038DBAF /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6023FC3A216B68C60001828F /* LaunchScreen.storyboard */,
 				6023FC3D216B68C60001828F /* Info.plist */,
 				6023FC43216B6C9F0001828F /* ListViewController.swift */,
+				60700703216CC74B0038DBAF /* UserInfo.plist */,
 			);
 			path = "Chapter05-CustomPlist";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				6023FC3C216B68C60001828F /* LaunchScreen.storyboard in Resources */,
 				6023FC39216B68C60001828F /* Assets.xcassets in Resources */,
 				6023FC37216B68C50001828F /* Main.storyboard in Resources */,
+				60700704216CC74B0038DBAF /* UserInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
