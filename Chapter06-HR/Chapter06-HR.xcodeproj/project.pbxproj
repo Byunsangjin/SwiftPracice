@@ -23,6 +23,8 @@
 		60700775216F84CA0038DBAF /* hr.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 60700774216F84CA0038DBAF /* hr.sqlite */; };
 		60700777216F85210038DBAF /* DepartmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700776216F85210038DBAF /* DepartmentDAO.swift */; };
 		60700779216F9A3F0038DBAF /* EmployeeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700778216F9A3F0038DBAF /* EmployeeDAO.swift */; };
+		6070077B217369DF0038DBAF /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070077A217369DF0038DBAF /* PickerController.swift */; };
+		6070077D21738AA40038DBAF /* DepartmentInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070077C21738AA40038DBAF /* DepartmentInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		60700774216F84CA0038DBAF /* hr.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hr.sqlite; sourceTree = "<group>"; };
 		60700776216F85210038DBAF /* DepartmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentDAO.swift; sourceTree = "<group>"; };
 		60700778216F9A3F0038DBAF /* EmployeeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDAO.swift; sourceTree = "<group>"; };
+		6070077A217369DF0038DBAF /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
+		6070077C21738AA40038DBAF /* DepartmentInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,11 @@
 				60700754216F82060038DBAF /* Info.plist */,
 				6070076F216F83A90038DBAF /* DepartmentListVC.swift */,
 				60700772216F83BA0038DBAF /* EmployeeListVC.swift */,
-				60700774216F84CA0038DBAF /* hr.sqlite */,
 				60700776216F85210038DBAF /* DepartmentDAO.swift */,
 				60700778216F9A3F0038DBAF /* EmployeeDAO.swift */,
+				6070077A217369DF0038DBAF /* PickerController.swift */,
+				6070077C21738AA40038DBAF /* DepartmentInfoVC.swift */,
+				60700774216F84CA0038DBAF /* hr.sqlite */,
 			);
 			path = "Chapter06-HR";
 			sourceTree = "<group>";
@@ -202,8 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6070074B216F82050038DBAF /* ViewController.swift in Sources */,
+				6070077D21738AA40038DBAF /* DepartmentInfoVC.swift in Sources */,
 				60700779216F9A3F0038DBAF /* EmployeeDAO.swift in Sources */,
 				60700749216F82050038DBAF /* AppDelegate.swift in Sources */,
+				6070077B217369DF0038DBAF /* PickerController.swift in Sources */,
 				60700777216F85210038DBAF /* DepartmentDAO.swift in Sources */,
 				60700770216F83A90038DBAF /* DepartmentListVC.swift in Sources */,
 				6070076C216F82670038DBAF /* FMDatabasePool.m in Sources */,

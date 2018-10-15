@@ -31,7 +31,7 @@ struct EmployeeVO {
     var departTitle = "" // 소속 부서명
 }
 
-class EmployeeDAT {
+class EmployeeDAO {
     // FMDatabase 객체 생성 및 초기화
     lazy var fmdb: FMDatabase! = {
         // 파일 매니저 객체를 생성한다.
@@ -63,15 +63,19 @@ class EmployeeDAT {
     
     
     
-    func find() -> [EmployeeVO] {
+    func find(departCd : Int = 0) -> [EmployeeVO] {
         // 반환할 데이터를 담을 [EmployeeVO] 타입의 객체 정의
         var employeeList = [EmployeeVO]()
         
         do {
+            // 조건절 정의
+            let condition = departCd == 0 ? "" : "WHERE Employee.depart_cd = \(departCd)"
+            
             let sql = """
-                SELECT emp_cd, emp_name, join_data, state_cd, department.depart_title
+                SELECT emp_cd, emp_name, join_date, state_cd, department.depart_title
                 FROM employee
                 JOIN department On department.depart_cd = employee.depart_cd
+                \(condition)
                 ORDER BY employee.depart_cd ASC
             """
             
@@ -162,6 +166,26 @@ class EmployeeDAT {
             return true
         } catch let error as NSError {
             print("DELETE Error : \(error.localizedDescription)")
+            return false
+        }
+    }
+    
+    
+    
+    func editState(empCd : Int, stateCd : EmpStateType) -> Bool {
+        do {
+            let sql = "UPDATE Employee SET state_cd = ? WHERE emp_cd = ?"
+            
+            // 인자값 배열
+            var params = [Any]()
+            params.append(stateCd.rawValue) // 재직 상태 코드 0, 1, 2
+            params.append(empCd) // 사원 코드
+            
+            // 업데이트 실행
+            try self.fmdb.executeUpdate(sql, values: params)
+            return true
+        } catch let error as NSError {
+            print("UPDATE Error : \(error.localizedDescription)")
             return false
         }
     }
